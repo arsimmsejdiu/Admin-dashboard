@@ -5,7 +5,7 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import "./App.css";
 
-import { Navbar } from "./components";
+import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
 import {
   Ecommerce,
   Orders,
@@ -45,11 +45,11 @@ const App = () => {
           {/* is menu active or not */}
           {activeMenu ? (
             <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
-              Sidebar
+              <Sidebar />
             </div>
           ) : (
             <div className="w-0 dark:bg-secondary-dark-bg">
-              Sidebar not visible
+              <Sidebar />
             </div>
           )}
           <div
